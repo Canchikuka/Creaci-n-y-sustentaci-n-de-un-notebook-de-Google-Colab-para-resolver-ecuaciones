@@ -1,1 +1,1 @@
-# Creaci-n-y-sustentaci-n-de-un-notebook-de-Google-Colab-para-resolver-ecuaciones
+# Creación-y-sustentación-de-un-notebook-de-Google-Colab-para-resolver-ecuaciones
