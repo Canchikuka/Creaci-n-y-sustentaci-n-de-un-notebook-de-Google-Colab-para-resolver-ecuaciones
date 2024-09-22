@@ -1,1 +1,26 @@
 # Creaci-n-y-sustentaci-n-de-un-notebook-de-Google-Colab-para-resolver-ecuaciones
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Constante de gravedad
+g = 9.8  # Aceleración debido a la gravedad (m/s^2)
+
+# Función para calcular la distancia en caída libre
+def distancia_caida_libre(t):
+    return 0.5 * g * t ** 2
+
+# Genera un array de tiempos desde 0 hasta 10 segundos
+tiempos = np.linspace(0, 10, 100)
+
+# Calcula las distancias para cada tiempo
+distancias = distancia_caida_libre(tiempos)
+
+# Gráfico de la distancia en función del tiempo
+plt.figure(figsize=(8, 5))
+plt.plot(tiempos, distancias, label='d(t) = 0.5 * g * t^2')
+plt.xlabel('Tiempo (s)')
+plt.ylabel('Distancia (m)')
+plt.title('Distancia en función del tiempo en caída libre')
+plt.legend()
+plt.grid(True)
+plt.show()
